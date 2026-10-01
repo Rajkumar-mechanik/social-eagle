@@ -240,7 +240,7 @@ time.sleep(1)
 # 22. Select the used columns
 # -------------------------------------------------
 
-pyautogui.hotkey("ctrl", "shift", "right")
+pyautogui.hotkey("ctrl", "a")
 
 
 # -------------------------------------------------
@@ -260,7 +260,11 @@ time.sleep(2)
 # 24. Save the Excel file
 # -------------------------------------------------
 
-pyautogui.hotkey("ctrl", "shift", "s")
+pyautogui.hotkey("Alt", "f")
+
+pyautogui.press("a")
+
+pyautogui.press("o")
 
 time.sleep(3)
 
@@ -286,6 +290,13 @@ pyautogui.press("enter")
 
 time.sleep(3)
 
+#-------------------------------------------------
+#27. Signature comment
+#-------------------------------------------------
+
+pyautogui.press("down", presses=3, interval=0.2)
+
+pyautogui.write("Welcome to Great Karigalan Magic Show")
 
 # -------------------------------------------------
 # 27. Take screenshot of final Excel sheet
@@ -315,7 +326,5 @@ print("Comment:", comment)
 print("Excel File:", excel_file)
 
 print("Screenshot:", screenshot_file)
-
-print("Welcome to karigalan magic show")
 
 print("--------------------------------------")
